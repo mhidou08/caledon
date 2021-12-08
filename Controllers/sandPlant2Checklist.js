@@ -175,7 +175,7 @@ module.exports.postSandPlant2Checklist = async (req, res) => {
         await googleSheets.spreadsheets.values.append({
             auth,
             spreadsheetId,
-            range: "BackLog!A:E",
+            range: "BackLog-SP2!A:E",
             valueInputOption: "USER_ENTERED",
             resource: {
                 values: [
